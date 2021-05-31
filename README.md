@@ -10,7 +10,7 @@ To setup the app locally follow these steps :
 
 - Git clone bills-system-analysis repo : `git clone`
 - Install node modules for client side and server side : `npm i`
-- Add .env file then and DATABASE_URL
+- Add .env file then and DATABASE_URL see .env.example file
 - run this command to run the project : `node Server/database/dbBuild.js` to Build Data Base
 - run this command to run the project : `npm run dev`
 
