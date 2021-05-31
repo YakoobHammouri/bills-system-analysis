@@ -1,0 +1,60 @@
+{
+  "name": "bills-system-analysis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "start": "NODE_ENV=production node Server/index.js",
+    "build": "cd client && npm run build",
+    "project-setup": "npm install && cd client && npm install",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "server": "nodemon Server/index.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-K3/bills-system-analysis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-K3/bills-system-analysis/issues"
+  },
+  "homepage": "https://github.com/GSG-K3/bills-system-analysis#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-developit": "^1.2.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^4.0.5",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "bcrypt": "^4.0.1",
+    "concurrently": "^5.1.0",
+    "cookie": "^0.4.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.18.2",
+    "uuid": "^7.0.2",
+    "xregexp": "^4.3.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-developit"
+  }
+}
